@@ -10,16 +10,11 @@ class BookmarkManager < Sinatra::Base
   get '/' do
     'Bookmark Manager'
   end
+
   get '/bookmarks' do
     @bookmarks = Bookmark.all
     erb :'bookmarks/index'
   end
-#   get '/bookmarks' do
-#     @bookmarks = [ "www.google.com",
-#     "www.stackoverflow.com",
-#     "www.youtube.com" ]
-#     erb: 'bookmarks/index' 
-#   end
 
   run! if app_file == $0
 end
