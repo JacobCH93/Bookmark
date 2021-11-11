@@ -17,6 +17,8 @@ I want to be able to filter by their tagged category
 
 Users should only be allowed to change and manage their own bookmarks
 
+<img width="1087" alt="Screenshot 2021-11-08 at 13 09 47" src="https://user-images.githubusercontent.com/77504397/141313540-257c2034-1d2f-4a24-ad79-190f1c9147f2.png">
+
 ## Create a test database
 
 `psql` - navigate to postgreSQL
