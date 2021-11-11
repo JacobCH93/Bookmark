@@ -7,7 +7,7 @@ class Bookmark
       connection = PG.connect(dbname: 'bookmark_manager')
     end
     result = connection.exec('SELECT * FROM bookmarks')
-    result.map { |bookmark| bookmark['title'] }
+    result.map { |bookmark| bookmark }
   end
 
   def self.create(url, title)
